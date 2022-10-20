@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="module" src="main.js"></script>
+	<title>Star Wars catalog</title>
+	<style>
+	.loader {
+		border: 16px solid #f3f3f3; /* Light grey */
+		border-top: 16px solid rgb(33, 37, 41); /* Blue */
+		border-radius: 50%;
+		width: 120px;
+		height: 120px;
+		animation: spin 2s linear infinite;
+	}
+
+	@keyframes spin {
+		0% { transform: rotate(0deg); }
+		100% { transform: rotate(360deg); }
+	}
+
+	.hide-loader{
+		display:none;
+	}
+	</style>
+</head>
+<body class="vh-100 bg-dark">
+	<header style="top: 0; width: 100%; overflow: hidden;">
+		<nav class="d-flex justify-content-center">
+			<a class="navbar-brand lnk" href="">
+				<img class="header_link" src="/img/StarWars.svg" width="100" height="100" class="d-inline-block align-top" alt="StarWars logo">
+			</a>
+		</nav>
+	</header>
+	<div class="episodes bg-dark d-flex justify-content-center">
+		<div class="loader" id="loader" style="margin-top: 200px;">
+		</div>
+	</div>
+</body>
+</html>
